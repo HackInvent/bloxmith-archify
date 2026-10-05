@@ -1,0 +1,141 @@
+{
+  "kind": "archify",
+  "version": "0.1.0",
+  "title": "Archify",
+  "description": "Render typed Archify JSON as a standalone interactive HTML diagram using a pinned local engine.",
+  "repository_url": "https://github.com/HackInvent/bloxmith-archify",
+  "bloxsmith_compatibility": [
+    "1.0.9"
+  ],
+  "tested_with_bloxsmith": "1.0.9",
+  "prerequisites": [
+    {
+      "type": "executable",
+      "name": "node"
+    },
+    {
+      "type": "manual",
+      "name": "Install official Archify 3.0.1 (pinned commit 2ab3cae7ac2c2a55d7386ca789d03c4fcd31816c); configure its archify/ directory. Node >=18 required."
+    }
+  ],
+  "locales": {
+    "en": "locales/en.json",
+    "fr": "locales/fr.json"
+  },
+  "ports": {
+    "inputs": [
+      {
+        "id": 1,
+        "name": "diagram",
+        "title": "diagram",
+        "accepts": [
+          "application/json",
+          "text/plain",
+          "message/*"
+        ],
+        "multiplicity": "one",
+        "required": true,
+        "execution_requirement": "required_for_execution"
+      }
+    ],
+    "outputs": [
+      {
+        "id": 1,
+        "name": "html",
+        "title": "html",
+        "emits": [
+          "text/html",
+          "message/*"
+        ],
+        "multiplicity": "many"
+      },
+      {
+        "id": 2,
+        "name": "file_path",
+        "title": "file_path",
+        "emits": [
+          "file/path",
+          "text/plain",
+          "message/*"
+        ],
+        "multiplicity": "many"
+      },
+      {
+        "id": 3,
+        "name": "issues",
+        "title": "issues",
+        "emits": [
+          "application/json",
+          "message/*"
+        ],
+        "multiplicity": "many"
+      }
+    ]
+  },
+  "config": {
+    "engine_directory": "",
+    "diagram_type": "auto",
+    "visual_preset": "input",
+    "output_directory": "",
+    "timeout_sec": 30,
+    "max_input_bytes": 1048576,
+    "max_output_bytes": 8388608,
+    "max_artifacts": 100
+  },
+  "port_capabilities": {
+    "can_add_inputs": false,
+    "can_add_outputs": false
+  },
+  "runtime": {
+    "initial_state": "waiting",
+    "runtime_executable": true,
+    "active_worker": true,
+    "centralized_executor": "generic",
+    "centralized_dependency_mode": "all_inputs",
+    "file_browser": true
+  },
+  "ui_assets": {
+    "modal": [
+      {
+        "kind": "css",
+        "path": "assets/css/properties.css"
+      },
+      {
+        "kind": "js",
+        "path": "assets/js/properties.js"
+      },
+      {
+        "kind": "js",
+        "path": "assets/js/settings.js"
+      },
+      {
+        "kind": "js",
+        "path": "assets/js/block_modal.js"
+      }
+    ],
+    "inspector_panel": [
+      {
+        "kind": "css",
+        "path": "assets/css/properties.css"
+      },
+      {
+        "kind": "js",
+        "path": "assets/js/properties.js"
+      },
+      {
+        "kind": "js",
+        "path": "assets/js/settings.js"
+      },
+      {
+        "kind": "js",
+        "path": "assets/js/inspector_panel.js"
+      }
+    ],
+    "node_card": [
+      {
+        "kind": "css",
+        "path": "assets/css/node_card.css"
+      }
+    ]
+  }
+}

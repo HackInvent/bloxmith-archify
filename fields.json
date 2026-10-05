@@ -1,0 +1,68 @@
+[
+  {
+    "key": "engine_directory",
+    "type": "directory",
+    "help": "The archify/ directory of official Archify 3.0.1. Files are hash-checked; no download or install at Run."
+  },
+  {
+    "key": "diagram_type",
+    "type": "select",
+    "options": [
+      "auto",
+      "architecture",
+      "workflow",
+      "sequence",
+      "dataflow",
+      "lifecycle"
+    ],
+    "help": "Auto follows diagram_type in the input. A selected type must match it."
+  },
+  {
+    "key": "visual_preset",
+    "type": "select",
+    "options": [
+      "input",
+      "classic",
+      "signal-flow",
+      "blueprint",
+      "editorial"
+    ],
+    "help": "Keep the authored style or apply one of the official viewer presets."
+  },
+  {
+    "key": "output_directory",
+    "type": "directory",
+    "help": "Empty stores diagrams in this block’s instance storage. Otherwise choose an existing directory; files always get unique names."
+  },
+  {
+    "key": "timeout_sec",
+    "type": "integer",
+    "min": 1,
+    "max": 120,
+    "help": "Total render deadline, including the verified engine snapshot."
+  },
+  {
+    "key": "max_input_bytes",
+    "type": "integer",
+    "min": 1024,
+    "max": 2097152,
+    "advanced": true,
+    "help": "Reject oversized JSON before launching Node."
+  },
+  {
+    "key": "max_output_bytes",
+    "type": "integer",
+    "min": 1048576,
+    "max": 16777216,
+    "advanced": true,
+    "help": "Maximum standalone HTML size. The embedded viewer is about 1 MB."
+  },
+  {
+    "key": "max_artifacts",
+    "type": "integer",
+    "min": 1,
+    "max": 1000,
+    "advanced": true,
+    "help": "Maximum saved diagrams in the selected destination. No automatic deletion; inspect and archive files explicitly when full."
+  }
+]

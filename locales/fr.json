@@ -1,0 +1,20 @@
+{
+  "block.archify.advanced": "Réglages avancés",
+  "block.archify.apply_hint": "Modifications locales jusqu’à Appliquer. Redémarrez un Run chargé pour utiliser les nouveaux réglages.",
+  "block.archify.last_state": "Dernier résultat",
+  "block.archify.invalid_json": "Saisissez un JSON valide avant d’appliquer.",
+  "block.archify.invalid_number": "Vérifiez la valeur numérique et ses limites.",
+  "block.archify.saved": "Paramètres appliqués.",
+  "block.archify.model.title": "Archify",
+  "block.archify.model.description": "Transformer un JSON Archify typé en diagramme HTML interactif autonome avec un moteur local épinglé.",
+  "block.archify.role": "Architecture du projet",
+  "block.archify.error": "Archify : {detail}",
+  "block.archify.help_engine_directory": "Le dossier archify/ d’Archify officiel 3.0.1. Fichiers vérifiés par empreinte ; aucun téléchargement au Run.",
+  "block.archify.help_diagram_type": "Auto suit diagram_type dans l’entrée. Un type sélectionné doit correspondre.",
+  "block.archify.help_visual_preset": "Garder le style du JSON ou appliquer l’un des styles officiels du lecteur.",
+  "block.archify.help_output_directory": "Vide : stockage persistant de cette instance du bloc. Sinon : dossier existant ; fichiers toujours nommés de façon unique.",
+  "block.archify.help_timeout_sec": "Délai total de rendu, copie vérifiée du moteur comprise.",
+  "block.archify.help_max_input_bytes": "Refuser les JSON trop volumineux avant de lancer Node.",
+  "block.archify.help_max_output_bytes": "Taille maximale du HTML autonome. Le lecteur intégré pèse environ 1 Mo.",
+  "block.archify.help_max_artifacts": "Nombre maximal de diagrammes dans la destination. Aucune suppression automatique ; archiver explicitement lorsque le dossier est plein."
+}

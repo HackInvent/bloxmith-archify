@@ -1,0 +1,20 @@
+{
+  "block.archify.advanced": "Advanced settings",
+  "block.archify.apply_hint": "Changes remain local until Apply. Restart a loaded Run to use new settings.",
+  "block.archify.last_state": "Last result",
+  "block.archify.invalid_json": "Enter valid JSON before applying.",
+  "block.archify.invalid_number": "Check the numeric value and its limits.",
+  "block.archify.saved": "Settings applied.",
+  "block.archify.model.title": "Archify",
+  "block.archify.model.description": "Render typed Archify JSON as a standalone interactive HTML diagram using a pinned local engine.",
+  "block.archify.role": "Project architecture",
+  "block.archify.error": "Archify: {detail}",
+  "block.archify.help_engine_directory": "The archify/ directory of official Archify 3.0.1. Files are hash-checked; no download or install at Run.",
+  "block.archify.help_diagram_type": "Auto follows diagram_type in the input. A selected type must match it.",
+  "block.archify.help_visual_preset": "Keep the authored style or apply one of the official viewer presets.",
+  "block.archify.help_output_directory": "Empty stores diagrams in this block’s instance storage. Otherwise choose an existing directory; files always get unique names.",
+  "block.archify.help_timeout_sec": "Total render deadline, including the verified engine snapshot.",
+  "block.archify.help_max_input_bytes": "Reject oversized JSON before launching Node.",
+  "block.archify.help_max_output_bytes": "Maximum standalone HTML size. The embedded viewer is about 1 MB.",
+  "block.archify.help_max_artifacts": "Maximum saved diagrams in the selected destination. No automatic deletion; inspect and archive files explicitly when full."
+}
